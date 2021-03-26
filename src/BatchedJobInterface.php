@@ -29,7 +29,7 @@ interface BatchedJobInterface extends JobInterface {
 	 * @param int   $batch_number The batch number increments for each new batch in the job cycle.
 	 * @param array $args         The args for this instance of the job.
 	 *
-	 * @throws Exception If an error occurs.
+	 * @throws Exception If an error occurs. Exception will be logged by ActionScheduler.
 	 */
 	public function handle_create_batch_action( int $batch_number, array $args );
 
@@ -41,7 +41,7 @@ interface BatchedJobInterface extends JobInterface {
 	 * @param mixed $item A single job item from the current batch.
 	 * @param array $args The args for this instance of the job.
 	 *
-	 * @throws Exception If an error occurs.
+	 * @throws Exception If an error occurs. Exception will be logged by ActionScheduler.
 	 */
 	public function handle_process_item_action( $item, array $args );
 
