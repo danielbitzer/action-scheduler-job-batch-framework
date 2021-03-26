@@ -1,0 +1,14 @@
+{
+    "name": "dan/action-scheduler-job-batch-framework",
+    "description": "A job batching framework for Action Scheduler (actionscheduler.org)",
+    "type": "library",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Dan Bitzer",
+            "email": "danielbitzer@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
